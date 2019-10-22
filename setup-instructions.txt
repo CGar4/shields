@@ -1,0 +1,18 @@
+
+########### vpn setup using protonvpn ###########
+1) setup a protonvpn account if you dont already have one. https://protonvpn.com/
+2) login to your protonvpn account. Make note of your open vpn username and pass in the 
+accounts tab. Download your openvpn udp config file.
+3) move the ovpn file to ~/shields/vpn-config/ and rename it protonvpn.com.udp.ovpn 
+5) edit pass.txt in ~/shields/vpn-config/pass.txt
+6) install openvpn-client if its not already installed.
+############ set up tor #############
+1) install tor cli : sudo apt install tor
+############ change execute promisions and set sys link#####
+1) run: sudo chmod +x shieldsup.sh
+2) run: sudo chmod +x shieldsdown.sh
+3) run: sudo ln shieldsup.sh /bin/shields-up
+4) run: sudo ln shieldsdown.sh /bin/shields-down
+############## run program #############
+shields-up
+Shields-down
